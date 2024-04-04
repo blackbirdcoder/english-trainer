@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>English Trainer</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <section id="home" class="section section-home">
+                    <div class="content-top">
+                        <h2 class="heading">Тренер по английскому</h2>
+                    </div>
+                    <div class="content-middle">
+                        <button id="btnTraining" class="button">Тренинг</button>
+                        <button id="btnSettings" class="button">Настройки</button>
+                    </div>
+                    <div class="content-bottom">
+                        <img src="images/imges-help-home.png" alt="help" />
+                    </div>
+                </section>
+                <section id="settings" class="section section-settings">
+                    <div class="content-top">
+                        <button class="button button-home">
+                            <img src="images/icon-home.png" alt="home" />
+                        </button>
+                        <h2 class="heading">Настройки</h2>
+                    </div>
+                    <div class="content-middle content-middle_position">
+                        <div class="content-information">
+                            <p class="content-information__text">
+                                Файл словаря должен иметь расширение ".txt". Содержимое файла должно быть организовано с
+                                разделением двоеточием ":" между словами. Рекомендуется использовать четное количество
+                                слов. Используйте минимум восемь пар слов. Каждое слово на английском языке должно быть
+                                разделено от их перевода на другом языке двоеточием. Каждая пара слов должна быть на
+                                новой строке.<br />
+                                Например:<br />
+                                satellites : спутники<br />
+                                highlighted : выделено
+                            </p>
+                            <div class="warning">
+                                <div id="warning" class="warning__text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-bottom content-bottom_position_default">
+                        <div class="file-box">
+                            <label class="input-file">
+                                <input id="file" class="file" type="file" accept=".txt" />
+                                <span id="fileName"></span>
+                            </label>
+                            <button id="btnCreatedDict" class="button button_size_m"></button>
+                            <button id="btnDeleteDict" class="button button_size_m">Удалить словарь</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="training" class="section section-training">
+                    <div class="content-top content-top_position">
+                        <div class="content__box-picture-result">
+                            <img id="pictureResult" src="" />
+                        </div>
+                        <div class="content__picture_reaction">
+                            <img id="pictureReaction" src="images/default.png" alt="reaction" />
+                        </div>
+                        <button class="button button-home">
+                            <img src="images/icon-home.png" alt="home" />
+                        </button>
+                    </div>
+                    <div class="content-middle content-middle_position_special">
+                        <div id="wordQuestion" class="content__word-question">lorem ipsum dolor sit amet</div>
+                        <div class="content__button-panel">
+                            <button id="btnAnswer1" class="button button-answer">Lorem, ipsum.</button>
+                            <button id="btnAnswer2" class="button button-answer">Lorem, ipsum dolor.</button>
+                            <button id="btnAnswer3" class="button button__position_top button-answer">
+                                Lorem ipsum dolor sit.
+                            </button>
+                            <button id="btnAnswer4" class="button button__position_top button-answer">
+                                Lorem ipsum dolor sit amet.
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-bottom content-bottom_positions">
+                        <div class="content__box-result result">
+                            <div class="result__success">
+                                <span class="result_icon">&#128142;</span>
+                                <span class="result__text result__text_small">x</span>
+                                <span id="countSuccess" class="result__text">0</span>
+                            </div>
+                            <div class="result__failure">
+                                <span class="result_icon">&#128169;</span>
+                                <span class="result__text result__text_small">x</span>
+                                <span id="countFailure" class="result__text">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

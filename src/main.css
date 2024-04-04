@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'PlayfairDisplayRegular';
+    src: url('fonts/PlayfairDisplayRegular.eot');
+    src: url('fonts/PlayfairDisplayRegular.eot') format('embedded-opentype'),
+        url('fonts/PlayfairDisplayRegular.woff2') format('woff2'),
+        url('fonts/PlayfairDisplayRegular.woff') format('woff'),
+        url('fonts/PlayfairDisplayRegular.ttf') format('truetype'),
+        url('fonts/PlayfairDisplayRegular.svg#PlayfairDisplayRegular') format('svg');
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+.content {
+    margin-top: 50px;
+    font-family: 'PlayfairDisplayRegular';
+    font-size: 20px;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #6f6776;
+    min-height: 726px;
+    max-height: 726px;
+    box-shadow: -1px 4px 6px 0px #06060678;
+    overflow: hidden;
+}
+
+.content-top_position {
+    width: 100%;
+    position: relative;
+}
+
+.content-middle {
+    width: 100%;
+    margin-top: 115px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-middle_position {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.content-middle_position_special {
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content__word-question {
+    font-size: 48px;
+    color: #e7a345;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 65px;
+}
+
+.content__word-question::first-letter {
+    text-transform: uppercase;
+}
+
+.content-information {
+    min-height: 335px;
+}
+
+.content-information > .content-information__text {
+    font-size: 20px;
+    color: #c5ccb8;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.warning > .warning__text {
+    font-size: 25px;
+    color: #ff6a4f;
+    text-align: center;
+}
+
+.content-bottom {
+    position: absolute;
+    left: 130px;
+    bottom: -24px;
+}
+
+.content-bottom_position_default {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.content__box-picture-result {
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.content__picture_reaction {
+    position: absolute;
+    top: -20px;
+    right: 170px;
+}
+
+.content__picture_reaction > img {
+    width: 442px;
+    height: 255px;
+}
+
+.content-bottom_positions {
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content__box-result {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.result_icon {
+    font-size: 27px;
+    padding-right: 10px;
+}
+
+.result__failure {
+    margin-top: 1px;
+}
+
+.result__success,
+.result__failure {
+    padding-left: 135px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.result__text {
+    color: #75bdba;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.result__text_small {
+    font-size: 27px;
+    text-transform: lowercase;
+}
+
+.heading {
+    margin: 0;
+    color: #c5ccb8;
+    font-size: 48px;
+}
+
+.button {
+    font-family: 'PlayfairDisplayRegular';
+    cursor: pointer;
+    width: 50%;
+    max-width: 300px;
+    height: 50%;
+    min-height: 65px;
+    font-size: 1.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #75bdba;
+    border: 1px solid gainsboro;
+    color: #433455;
+    padding: 0;
+}
+.button:hover {
+    background-color: #7cd3cf;
+}
+
+.button::first-letter {
+    text-transform: uppercase;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #b0c7c6;
+}
+
+.button:disabled:hover {
+    background-color: #b0c7c6;
+}
+
+.button-home {
+    width: 48px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    min-height: auto;
+}
+
+.button-home > img {
+    width: 28px;
+    height: 25px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+
+.button_size_m {
+    display: block;
+    margin-top: 35px;
+    max-width: 100%;
+    width: 397px;
+}
+
+.content__button-panel {
+    margin-top: 30px;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.button__position_top {
+    margin-top: 40px;
+}
+
+.button-answer {
+    font-size: 1.2em;
+    width: 300px;
+    max-width: 300px;
+    height: 120px;
+    max-height: 120px;
+}
+
+.file-box {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+
+.input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.8em;
+    vertical-align: middle;
+    color: #433455;
+    text-align: center;
+    background-color: #75bdba;
+    line-height: 22px;
+    height: 40px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+    margin: 0;
+    width: 397px;
+    height: 50%;
+    min-height: 65px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.input-file span:hover {
+    background-color: #7cd3cf;
+}
+
+.file {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+/* JavaScript styles */
+
+.js-unable {
+    display: none;
+}

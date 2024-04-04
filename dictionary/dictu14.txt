@@ -1,0 +1,42 @@
+appropriate : соответствующий
+artificial intelligence : искусственный интеллект
+behaviour : поведение
+circumstance : обстоятельство
+continual : постоянный
+decision tables : таблицы принятия решений
+direct implementation : прямая реализация
+experience : опыт
+extent : степень
+fault : ошибка
+feasibility : осуществимость
+flowchart : блок-схема
+gradually : постепенно
+iteration : итерация
+loop : цикл
+maintain : поддерживать
+markup language : язык разметки
+network system : сетевая система
+parallel implementation : параллельная реализация
+particular : конкретный
+pilot implementation : пилотная реализация
+pseudocode : псевдокод
+repeatedly : повторно
+sequence: последовательность
+strengths and weaknesses : сильные и слабые стороны
+systems analyst : аналитик систем
+testing and adapting : тестирование и адаптация
+therefore : следовательно
+to allocate : выделять
+to arise : возникать
+to avoid errors : избегать ошибок
+to be responsible for : быть ответственным за
+to consider : рассматривать
+to exist : существовать
+to get rid of : избавиться от
+to investigate : исследовать
+to meet the requirements : удовлетворять требования
+to modify : модифицировать
+to occur : происходить
+to operate properly : работать правильно
+to put into service : вводить в эксплуатацию
+to allow: разрешить
