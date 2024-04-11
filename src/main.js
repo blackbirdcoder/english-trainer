@@ -111,7 +111,7 @@ btnTraining.addEventListener('click', () => {
     pictureReaction.src = DEFAULT_IMAGE;
     sectionTraining.classList.remove(CSS_HIDE_CONTENT);
     sectionHome.classList.add(CSS_HIDE_CONTENT);
-    startingTrainingProcess(dictionary, MAX_NUMBER_ELEMENTS_INVOLVED, SINGLE_ELEMENT_DICTIONARY);
+    startingTrainingProcess(dictionary);
 });
 
 for (const btnAnswer of btnAnswers) {
@@ -123,7 +123,7 @@ for (const btnAnswer of btnAnswers) {
             pictureResult.src = SUCCESS_PICTOGRAM;
             pictureReaction.src = CORRECT_IMAGE;
             answerCounting(countSuccess);
-            startingTrainingProcess(dictionary, MAX_NUMBER_ELEMENTS_INVOLVED, SINGLE_ELEMENT_DICTIONARY);
+            startingTrainingProcess(dictionary);
         } else {
             pictureResult.src = FAIL_PICTOGRAM;
             pictureReaction.src = ERROR_IMAGE;
@@ -202,9 +202,9 @@ function helpClearFile(fileList) {
     fileList.files = dataTransfer.files;
 }
 
-function startingTrainingProcess(dictionary, elementLimit, oneLimit) {
-    const favoritePartDictionary = takeDictionaryRandomElements(dictionary, elementLimit);
-    const favoriteItem = takeDictionaryRandomElements(favoritePartDictionary, oneLimit);
+function startingTrainingProcess(dictionary) {
+    const favoritePartDictionary = takeDictionaryRandomElements(dictionary, MAX_NUMBER_ELEMENTS_INVOLVED);
+    const favoriteItem = takeDictionaryRandomElements(favoritePartDictionary, SINGLE_ELEMENT_DICTIONARY);
     assignWordsButtons(favoritePartDictionary, btnAnswers);
     assignWordQuestion(favoriteItem, boxWordQuestion);
 }
